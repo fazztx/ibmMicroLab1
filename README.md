@@ -20,3 +20,35 @@ In this lab, you will understand how to create a Swagger documentation for your 
 - Use the Swagger Editor to create Swagger documentation for REST API
 - Use SwaggerUI to access the REST API endpoints of an application
 - Generate code with the Swagger documentation
+
+---
+
+# Querying with GraphQL
+
+In this lab, you will become familiar with using GraphQL to query the APIs served through a GraphQL service running on a server using Postman.
+
+## Learning Objectives:
+- Use GraphQL with Postman to access GraphQL Service
+- Structure queries to access APIs to get selective information that you need
+
+### Examples:
+{
+    cities {
+        city
+        state
+        }
+}
+{
+    cities(state:"Florida") {
+        city
+    }
+}
+
+### Task:
+- Construct a query to return all the cities in the state of “Ohio”, along with the state name.
+ {
+    cities(state:"Ohio") {
+        city
+        state
+    }
+}
